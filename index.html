@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VibeSmith</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #111;
+      color: #f0f0f0;
+      padding: 2em;
+    }
+    input, button {
+      font-size: 1.1em;
+      padding: 0.5em;
+      margin: 0.5em 0;
+    }
+    .track {
+      margin: 1em 0;
+      padding: 1em;
+      background-color: #222;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #444;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 0.5em;
+    }
+    button:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎧 VibeSmith</h1>
+
+  <input id="vibeInput" type="text" placeholder="Describe your vibe…">
+  <button onclick="generatePlaylist()">Generate Playlist</button>
+
+  <div id="playlist"></div>
+
+  <!-- ✅ New Section: Saved Tracks Summary -->
+  <div id="savedTracks" style="margin-top: 2em;"></div>
+
+  <script src="vibesmith.js"></script>
+</body>
+</html>
